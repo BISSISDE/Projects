@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz by Aiganym</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="StartPart">
+      <div class="DivButtonStart">
+        <button class="buttonStart" id="buttonStart">Start game</button>
+      </div>
+      <h1 class="TextAlga">AL</h1>
+      <h1 class="TextAlgaContinue">GA</h1>
+    </header>
+
+    <span id="TimerSpan" style="display: none">
+      <div class="insiderow">
+        <h2 id="timer"></h2>
+        <div class="rowbuttons">
+          <button id="reset">Stop</button>
+          <button id="start">Start</button>
+        </div>
+      </div>
+    </span>
+
+    <main style="display: none" id="QuestionPart">
+      <div class="column">
+        <h1 id="colorTrueFalse"></h1>
+        <div class="buttons">
+          <button class="QuestionOneButton"></button>
+          <button class="QuestionOneButton"></button>
+          <button class="QuestionOneButton"></button>
+          <button class="QuestionOneButton"></button>
+        </div>
+      </div>
+      <div class="row">
+        <img src="" alt="" id="questionImage" />
+        <div class="Itog">
+          <h2 id="TextTrueFalse"></h2>
+        </div>
+      </div>
+      <button id="nextButton" class="nextButton" style="display: none">
+        Next Question >
+      </button>
+    </main>
+
+    <div id="Result" style="display: none">
+      <h1>Quiz Finished ></h1>
+      <h2 id="finalScore"></h2>
+      <h2 id="timeTaken"></h2>
+      <button id="playAgainButton">Play Again ></button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
